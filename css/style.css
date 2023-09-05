@@ -1,0 +1,356 @@
+:root {
+  /* colors */
+  --backgOil: #000;
+  --backgWaterL: #1a2a60;
+  --backgWaterM: #142151;
+  --backgWaterMB: #101b45;
+  --backgWaterB: #0a1437;
+  --backgSnow: #ffffff;
+  /*******************************/
+
+  --heightSection: 23vh;
+  --widthSection: 99vw;
+}
+
+/*Estructura principal*/
+body {
+  background-color: var(--backgOil);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+
+/*contenedor principal*/
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 100vw;
+  max-height: 100%;
+  box-sizing: border-box;
+  margin: 0%;
+}
+
+/*Estilos sección encabezado*/
+#headerportafolio {
+  background-image: linear-gradient(
+    80deg,
+    rgba(255, 0, 0, 0),
+    var(--backgWaterL)
+  );
+  width: var(--widthSection);
+  height: 23vh;
+  /* height: var(--heightSection); */
+  box-sizing: border-box;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Estilos sección quien soy*/
+#sectionWho {
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0),
+    var(--backgWaterM)
+  );
+  width: var(--widthSection);
+  /* height: var(--heightSection); */
+  height: 20vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Estilos sección habilidades*/
+#sectionSkill {
+  /* background-color: var(--backgWaterMB); */
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0),
+    var(--backgWaterMB)
+  );
+  width: var(--widthSection);
+  height: 30vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*Estilos sección proyectos*/
+#sectionProject {
+  /* background-color: var(--backgWaterB); */
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0),
+    var(--backgWaterB)
+  );
+  width: var(--widthSection);
+  height: 20vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Estilos sección contactenos*/
+
+#footerContact {
+  background-color: var(--backgSnow);
+  width: var(--widthSection);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/****************************************************/
+#screen,
+#window,
+#page {
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+}
+
+/*Header*/
+
+/*Estilos de las imagen de la foto*/
+#foto {
+  max-width: 8rem;
+  max-height: 8rem;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+}
+
+/*Estilos de .miportafolio{}*/
+#titleHeader {
+  /*background-color: blueviolet;*/
+  box-sizing: border-box;
+  font-size: 2rem;
+  color: var(--backgSnow);
+  text-align: center;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
+/****************************************************/
+
+/*Who*/
+
+/*Estilos del parrafo de quien soy*/
+#scriptWho {
+  padding: 1rem;
+  font-size: 1rem;
+  color: var(--backgSnow);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/*************************************************/
+
+/*Skills*/
+
+/*Estilos del nivel de habilidad*/
+.nivelSkills {
+  font-size: 0.75rem;
+  color: var(--backgSnow);
+}
+
+/*Estilos de los titulos frontend y backend de habilidad*/
+.titleSkills {
+  margin-bottom: 1rem;
+  flex: 50%;
+  padding-top: 0.5rem;
+  color: var(--backgSnow);
+}
+
+/*Estilos de "cards" para agrupar imagen y nivel*/
+.cardSkill {
+  padding-bottom: 1rem;
+  margin: 0.25rem;
+}
+
+/*Estilos de contenedor del detalle de las habilidades*/
+.containerDetailsSkills {
+  display: flex;
+  flex: 80%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+/*Estilos de contenedor de los titulos de las habilidades*/
+.containerTitleSkills {
+  display: flex;
+  flex: 20%;
+  width: 100%;
+  flex-direction: row;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/*Estilos de tamaño de las imagenes de los lenguajes conocidos*/
+#imgHtml,
+#imgCss,
+#imgJs,
+#imgPython {
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  box-sizing: border-box;
+}
+
+/*Estilos del "divisor" entre frontend y Backend*/
+#dividerSkills {
+  box-sizing: border-box;
+  height: 12rem;
+  border-color: white;
+  border-style: solid;
+  border-width: 0.1rem;
+  background-color: var(--backgSnow);
+}
+
+/*Estilos de los container frontend y Backend*/
+#sectionFrontend,
+#sectionBackend {
+  display: flex;
+  flex: 45%;
+  text-align: center;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/*************************************************/
+
+/*Projects*/
+
+/*Estilos de los container detalle de los proyectos desarrollados*/
+.containerDetailProjects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Estilos de los container titulo de los proyectos desarrollados*/
+.containerTitleProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Estilos del titulo de card's de los proyectos desarrollados*/
+.containerTitleCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Estilos de los card's de los proyectos desarrollados*/
+.cardProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--backgSnow);
+}
+
+/*Estilos del titulo de la sección de los proyectos desarrollados*/
+#titleProyects {
+  max-width: 100%;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+  box-sizing: border-box;
+  color: var(--backgSnow);
+}
+
+/*Estilos de  la imagen previa del proyecto desarrollado*/
+#portafolio {
+  max-width: 8rem;
+  box-sizing: border-box;
+}
+
+/*Estilos de  la imagen de github del proyecto desarrollado*/
+#githubPortafolio {
+  border-radius: 50%;
+  max-width: 1.5rem;
+  margin-bottom: 0.25rem;
+  box-sizing: border-box;
+}
+
+/*Estilos del texto github del proyecto desarrollado*/
+#titleGitHubPortafolio {
+  padding-left: 0.5rem;
+  color: var(--backgSnow);
+}
+
+/*************************************************/
+
+/*Contact*/
+
+/*Estilos de las imagenes del footer emal y linkedin*/
+img {
+  max-width: 3rem;
+}
+
+/*Estilos de las imagenes del footer emal y linkedin*/
+#titleContact {
+  margin-right: 0.25rem;
+}
+
+#link_linked {
+  text-decoration: none;
+}
+
+/************************************************/
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #scriptWho {
+    width: 50vw;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #scriptWho {
+    width: 35vw;
+  }
+  #titleHeader {
+    font-size: 3rem;
+  }
+
+  .titleSkills {
+    font-size: 2rem;
+  }
+  #imgHtml,
+  #imgCss,
+  #imgJs,
+  #imgPython {
+    max-width: 4rem;
+    max-height: 4rem;
+    box-sizing: border-box;
+  }
+
+  .nivelSkills {
+    font-size: 1rem;
+  }
+}
