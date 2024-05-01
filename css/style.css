@@ -66,7 +66,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 /*Estilos sección habilidades*/
@@ -327,7 +327,7 @@ img {
 /************************************************/
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
   :root {
     --widthSection: 96.5vw;
   }
